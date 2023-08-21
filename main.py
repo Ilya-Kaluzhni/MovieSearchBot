@@ -5,7 +5,6 @@ from dotenv import load_dotenv, find_dotenv
 import requests
 import os
 
-
 load_dotenv(find_dotenv())
 bot = Bot(os.getenv('token_bot'))
 dp = Dispatcher(bot)
