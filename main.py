@@ -10,7 +10,6 @@ bot = Bot(os.getenv('token_bot'))
 dp = Dispatcher(bot)
 headers = {"X-API-KEY": os.getenv('token_search')}
 
-print('start!')
 
 @dp.message_handler(commands= ['start'])
 async def start_command(messege: types.Message):
